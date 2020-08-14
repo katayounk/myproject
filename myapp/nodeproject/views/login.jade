@@ -2,6 +2,7 @@ extends layout
 
 block content
  main.mainy
+
   section.container.pt-5.text-center(style='border:2px solid rgb(231, 124, 23)')
     .row
       .col-md-12.col-sm-12.text-center
@@ -9,14 +10,18 @@ block content
         hr
     .row.justify-content-center
       .col-md-6.col-md-offset-3
-        form(action='./profile.php', method='Post')
+        form(action='./login', method='Post')
           .form-group
             label(for='email') Email address:
-            input.form-control(type='email', placeholder='Enter email')
+            input.form-control(type='email', name='email', placeholder='Enter email')
           .form-group
             label(for='passw') Password :
-            input.form-control(required='', type='password', placeholder='Enter password')
+            input.form-control(required='', type='password',name='password', placeholder='Enter password')
           hr
           .form-group
             button#submit.btn.btn-block.btn1(name='submit', type='submit') Submit
-    br
+           
+            p(style='color:red')  #{error}
+            p(style='color:red')  #{lerror} 
+
+      

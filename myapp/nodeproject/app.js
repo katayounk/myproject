@@ -13,7 +13,7 @@ var entertainRouter = require('./routes/entertain');
 var profileRouter = require('./routes/profile');
 var signupRouter = require('./routes/signup');
 var kidsbookRouter = require('./routes/kidsbook');
-
+var logoutRouter = require('./routes/logout');
 
 //var usersRouter = require('./routes/users');
 
@@ -40,7 +40,7 @@ app.use('/profile', profileRouter);
 app.use('/signup', signupRouter);
 app.use('/profile', profileRouter);
 app.use('/kidsbook', kidsbookRouter);
-
+app.use('/logout', logoutRouter);    
 //app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

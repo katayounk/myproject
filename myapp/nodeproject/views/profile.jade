@@ -1,5 +1,52 @@
 extends layout
 
 block content
- main
-     h2 profile
+  main
+  section.profiles
+   .container
+     h2 Welcome to your profile page #{fname}  #{lname}  
+     p Your Email :  #{email}
+     a.btn.btn-info(href='/logout', role='button') LogOut
+
+  section.cardmarket
+   .container.pt-5.pl-2
+    .row
+      .col-lg-2.col-md-3.col-sm-12.col-12
+        .card
+          img.card-img-top(src='images/business.jpg')
+          button.btn.btn-warning(type='button') Buy It
+          .card-body
+            p.card-text Best sellers
+      .col-lg-2.col-md-3.col-sm-12.col-12
+        .card
+          img.card-img-top(src='images/flowers.jpg')
+          button.btn.btn-warning(type='button') Buy It
+          .card-body
+            p.card-text psychology
+      .col-lg-2.col-md-3.col-sm-12.col-12
+        .card
+          img.card-img-top(src='images/Fearless_book.jpg')
+          button.btn.btn-warning(type='button') Buy It
+          .card-body
+            p.card-text  Fiction
+      .col-lg-2.col-md-3.col-sm-12.col-12
+        .card
+          img.card-img-top(src='images/Stepsister.jpg')
+          button.btn.btn-warning(type='button') Buy It
+          .card-body
+            p.card-text  Fiction
+      .col-lg-2.col-md-3.col-sm-12.col-12
+         .card
+          img.card-img-top(src='images/book2.jpg')
+          button.btn.btn-warning(type='button') Buy It
+          .card-body
+            p.card-text Fantasy
+      .col-lg-2.col-md-3.col-sm-12.col-12
+         .card
+          img.card-img-top(src='images/book1.jpg')
+          button.btn.btn-warning(type='button') Buy It
+          .card-body
+            p.card-text Best sellers
+
+
+    

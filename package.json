@@ -1,7 +1,6 @@
 {
   "name": "nodejsbooks",
   "version": "1.0.0",
-  "description": "",
   "main": "dbbook.js",
   "dependencies": {
     "express": "^4.17.1",
@@ -14,5 +13,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katayounk/myproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/katayounk/myproject/issues"
+  },
+  "homepage": "https://github.com/katayounk/myproject#readme",
+  "description": ""
 }
