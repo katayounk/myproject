@@ -1,0 +1,43 @@
+extends layout
+
+block content
+ main.mainy
+  section
+    .container.pt-5(style='border:2px solid rgb(231, 124, 23)')
+      .row
+        .col-md-12.col-sm-12.text-center
+          h4(style='font-weight: bold; color:rgb(231, 124, 23)') Get In Touch
+          hr
+      .row
+        .col-md-12.text-center
+          p
+            | We are committed to leading every step of our online book store.
+            | We also have 3 options to receive your book: curbside pickup, local delivery or Canada Post.
+          hr
+      .row.justify-content-center
+        .col-md-6.col-md-offset-3
+          form(action='contact', method='post')
+            .form-group
+              label(for='fname') First Name
+              input#fullname.form-control(type='text', name='firstname', placeholder='First Name', required='', data-error=' your first name')
+            .form-group
+              label(for='lname') Last Name
+              input#fullname.form-control(type='text', name='lastname', placeholder='Last Name', required='', data-error=' your lastname')
+            .form-group
+              label(for='email') Email address
+              input#email.form-control(type='email',name='email', placeholder='Enter email')
+            .form-group
+              select#inputState.form-control
+                option(selected='') Choose a subject
+                option  Book Delivery
+                option  Entertainment 
+                option  puzzle and Game
+                option  Return or Exchange
+            
+            .form-group
+              textarea#comment.form-control(name='message', cols='30', rows='3', placeholder='Your Message')
+            .form-group
+              button#submit.btn.btn-block.btn1(name='submit', type='submit') Submit
+
+            h4  #{msg}
+       br

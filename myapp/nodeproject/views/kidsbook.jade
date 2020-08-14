@@ -1,0 +1,64 @@
+extends layout
+
+block content
+ main
+  section(style='margin-top:3em ; margin-bottom: 3em;')
+    .container
+      .row
+        .col-md-5.col-12(style='font-size:1.5em; font-weight: bolder;')
+          p
+            | At BookMarket ,We offer a monthly selection of recent and keenly anticipated arrivals.Check your favorit title now.You need delivery? We are ready
+        #repair.col-md-7.col-12
+          p
+            | Our dedicated team is here to help
+            | you. We will work hard to provide you with the safety,
+            | We are proud to offer a large selection of veriety of books, gaming , puzzles
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim ad libero dolore consequatur
+            | deserunt eum a architecto natus cum. Facere recusandae placeat iste quae illum laboriosam repudiandae
+            | ipsa odit exercitationem, nulla eligendi corporis quibusdam fugiat fugit culpa doloremque eveniet cum,
+            | excepturi veritatis error dolores. Cumque provident possimus a! Suscipit!
+  section.cardmarket
+    .container
+      br
+      div
+        .row.category-container
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4(data-ctg='ctg-2')
+            #kid1.card
+              img.card-img-top(alt='kids book', src='images/little-girlbook1.jpg')
+              .card-footer.p-0.m-0
+                button.btn.btn1.btn-block  NEW ARRIVALS 
+            // end of card
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4
+            #kid1.card(data-ctg='ctg-1')
+              img.card-img-top(alt='kids book', src='images/little-girlbook1.jpg')
+              .card-footer.p-0.m-0
+                button.btn.btn1.btn-block Summer Reading Camp
+          #mycards.col-xs-12.col-sm-6.col-md-4.col-lg-4
+            #kid1.card(data-ctg='ctg-1')
+              img.card-img-top(alt='kids book', src='images/little-girlbook1.jpg')
+              .card-footer.p-0.m-0
+                button.btn.btn1.btn-block TOP TRENDING KIDS BOOKS 
+        // end of row
+        // -----------------------------Second Row ----------------------------------------
+        br
+        .row.category-container
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4
+            #hidetog1.card(data-ctg='ctg-2')
+              img.card-img-top(alt='kids book', src='images/little-girlbook1.jpg')
+              p#hidetxt  this is hide text.click button you to see hiding p.
+              .card-footer.p-0.m-0
+                button.btn.btn1.btn-block books age 2-5 
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4
+            #hidetog2.card(data-ctg='ctg-2')
+              img.card-img-top(alt='kids book', src='images/little-girlbook1.jpg')
+              p#hidetxt  this is hide text for age 6-10.
+              .card-footer.p-0.m-0
+                button.btn.btn-dark.btn-block books age 6-10
+          .col-xs-12.col-sm-6.col-md-4.col-lg-4
+            #hidetog3.card(data-ctg='ctg-2')
+              img.card-img-top(alt='kids book', src='images/little-girlbook1.jpg')
+              p#hidetxt  this is hide text for Teens books.
+              .card-footer.p-0.m-0
+                button.btn.btn-dark.btn-block Teens Books
+        // -----------------------end of rows-----------------------------
+  br

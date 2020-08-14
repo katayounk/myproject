@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  main.mainy
+    section.container.pt-5.text-center(style='border:2px solid rgb(231, 124, 23)')
+      .row
+        .col-md-12.col-sm-12.text-center
+          h4(style='font-weight: bold; color:rgb(231, 124, 23)') Sign Up and be a member 
+          hr
+      .row.justify-content-center
+        .col-md-6.col-md-offset-3
+          form(action='/signup', method='post')
+            .form-group
+              label(for='fname') First Name
+              input#fullname.form-control(type='text', name='firstname', placeholder='First Name', required='', data-error='Please enter your name')
+            .form-group
+              label(for='lname') Last Name
+              input#fullname.form-control(type='text', name='lastname', placeholder='Last Name', required='', data-error='Please enter your lastname')
+            .form-group
+              label(for='email') Email address
+              input#email.form-control(type='email',name='email', placeholder='Enter email')
+            .form-group
+              label(for='password') Password
+              input#email.form-control(type='password',name='password', placeholder='Enter password')
+            .form-group
+              button#submit.btn.btn-block.btn1(name='submit', type='submit') Sign Up
+
+       p  #{error}
+
+
+      
